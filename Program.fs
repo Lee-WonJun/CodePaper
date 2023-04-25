@@ -77,11 +77,8 @@ let getLangByExt ext =
 
 let getCodeBlock ext path : CodeBlock =
     let lang = getLangByExt ext
-    if lang <> "" then
-        let content = getFileContent path
-        { File = path; Lang = lang; Content = content }
-    else
-        { File = ""; Lang = ""; Content = "" }
+    let content = getFileContent path
+    { File = path; Lang = lang; Content = content }
 
 
 let generateOutput files (filterExts:string list) (outputPath:string) =
@@ -89,7 +86,6 @@ let generateOutput files (filterExts:string list) (outputPath:string) =
         files
         |> Seq.filter (fun (file:string) -> filterExts |> List.exists (fun ext -> Path.GetExtension(file) = ext) || filterExts = [])
         |> Seq.map (fun file -> getCodeBlock (Path.GetExtension file) file)
-        |> Seq.filter (fun block -> block.Lang <> "")
     use streamWriter = new StreamWriter(outputPath)
     for block in codeBlocks do
         let header = sprintf "### %s\n" block.File
