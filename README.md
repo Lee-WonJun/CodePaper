@@ -57,3 +57,10 @@ CodePaper supports the following programming languages:
 - vbnet
 - coffeescript
 - elm
+
+
+## Example Usage
+`CodePaper` can be used for:
+
+- Code documentation: Collects code blocks from all languages in a project and compiles them into a single Markdown file to improve code comprehension.
+- Collaboration: The generated Markdown file can be shared with other developers or users of the project for code reviews, explanations, or other purposes to facilitate collaboration and communication among team members.
