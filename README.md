@@ -64,3 +64,49 @@ CodePaper supports the following programming languages:
 
 - Code documentation: Collects code blocks from all languages in a project and compiles them into a single Markdown file to improve code comprehension.
 - Collaboration: The generated Markdown file can be shared with other developers or users of the project for code reviews, explanations, or other purposes to facilitate collaboration and communication among team members.
+
+
+## Example Output
+
+
+### D:\Project\Pass-copy\StringToColorConverter.cs
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PassThrough
+{
+    public class StringToColorConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return Color.FromRgba(value.ToString());
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return null;
+        }
+    }
+}
+
+```
+
+### D:\Project\Pass-copy\Properties\launchSettings.json
+
+```json
+{
+  "profiles": {
+    "Windows Machine": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  }
+}
+```
+
