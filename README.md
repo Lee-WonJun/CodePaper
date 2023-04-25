@@ -1,4 +1,5 @@
 # CodePaper
+<img src="https://user-images.githubusercontent.com/10369528/234310384-593308c9-7bea-43b6-ae01-d71bcab785e0.png" width="300">
 CodePaper is a command-line interface (CLI) program written in F# that generates a single Markdown file containing code blocks for all files in a given directory.
 
 ## Usage
@@ -66,6 +67,12 @@ CodePaper supports the following programming languages:
 - Collaboration: The generated Markdown file can be shared with other developers or users of the project for code reviews, explanations, or other purposes to facilitate collaboration and communication among team members.
 
 
+
+
+## Small talk that doesn't matter
+- The code and readme for `CodePaper` were largely created using **ChatGPT**.
+- The logo for `CodePaper` was created using **Bing/create**, so the word in the image is misspelled. hahahahaha
+
 ## Example Output
 
 
@@ -109,4 +116,3 @@ namespace PassThrough
   }
 }
 ```
-
